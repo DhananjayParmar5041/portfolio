@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhananjay Parmar | Computer Science & Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Dhananjay Parmar - Computer Science & Engineering Student at Parul University, Full-Stack Developer, AI & UI/UX enthusiast, and National Inline Skating Silver Medalist.">
+  <meta name="keywords" content="Dhananjay Parmar, Portfolio, Software Developer, Full-Stack Developer, Parul University, React, Node.js, Python, Java, MongoDB">
+  <meta name="author" content="Dhananjay Parmar">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Dhananjay Parmar | Computer Science & Engineering Portfolio">
+  <meta property="og:description" content="Explore the projects, technical skills, and achievements of Dhananjay Parmar.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Dhananjay Parmar Home">
+        <span class="brand-badge">DP</span>
+        <span class="brand-text">Dhananjay<span class="text-accent">.dev</span></span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="btn-icon theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="openResumeBtn" class="btn btn-secondary btn-sm nav-resume-btn">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>View Resume</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-hire-btn">
+          <span>Let's Talk</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="btn-icon mobile-menu-btn" aria-label="Open mobile menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-indicator-wrapper">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Software &amp; Tech Internships / Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="hero-name">Dhananjay Parmar</span>
+          </h1>
+          
+          <p class="hero-role">
+            Computer Science &amp; Engineering Student &bull; Full-Stack &amp; AI Enthusiast
+          </p>
+
+          <p class="hero-bio">
+            Undergraduate at <strong>Parul University</strong> with a solid foundation in software development, data structures, and modern full-stack web applications. Passionate about building impactful software, exploring Artificial Intelligence &amp; Generative AI, and crafting intuitive user interfaces.
+          </p>
+
+          <div class="hero-meta-strip">
+            <div class="meta-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Vadodara, Gujarat, India</span>
+            </div>
+
+            <div class="meta-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>B.Tech CSE (2023 - Present)</span>
+            </div>
+
+            <div class="meta-pill highlight-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <span>National Inline Skating Silver Medalist</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>Explore Projects</span>
+              <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              <span>Get in Touch</span>
+            </a>
+            <button id="quickCopyEmailBtn" class="btn btn-outline btn-lg" data-email="dhananjayparmar5041@gmail.com">
+              <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="developer-card-wrapper">
+            <div class="code-terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">developer_profile.json</span>
+              </div>
+              <div class="terminal-body">
+                <pre><code><span class="json-key">"name"</span>: <span class="json-str">"Dhananjay Parmar"</span>,
+<span class="json-key">"education"</span>: <span class="json-str">"B.Tech CSE @ Parul University"</span>,
+<span class="json-key">"primaryStack"</span>: [
+  <span class="json-str">"React"</span>, <span class="json-str">"Node.js"</span>, <span class="json-str">"Python"</span>,
+  <span class="json-str">"Java"</span>, <span class="json-str">"MongoDB"</span>, <span class="json-str">"SQL"</span>
+],
+<span class="json-key">"focusAreas"</span>: [
+  <span class="json-str">"Full-Stack Development"</span>,
+  <span class="json-str">"AI & Generative AI"</span>,
+  <span class="json-str">"UI/UX Design Systems"</span>
+],
+<span class="json-key">"sportsAchievement"</span>: <span class="json-str">"National Silver Medalist (Inline Skating)"</span>,
+<span class="json-key">"status"</span>: <span class="json-str highlight">"Ready for Impact & Building"</span></code></pre>
+              </div>
+            </div>
+
+            <!-- Quick Stat Badges -->
+            <div class="hero-floating-badges">
+              <div class="floating-stat-item">
+                <span class="stat-number">2023+</span>
+                <span class="stat-label">Parul Univ CSE</span>
+              </div>
+              <div class="floating-stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Discipline &amp; Drive</span>
+              </div>
+              <div class="floating-stat-item">
+                <span class="stat-number">National</span>
+                <span class="stat-label">Skating Medalist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Professional Summary</span>
+          <h2 class="section-title">Engineering With Purpose &amp; Discipline</h2>
+          <p class="section-subtitle">A blend of computer science foundations, full-stack craftsmanship, and athletic perseverance.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-summary-card">
+            <div class="card-icon-header">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h3>Background &amp; Aspirations</h3>
+            </div>
+            <p class="summary-para">
+              I am a <strong>Computer Science &amp; Engineering undergraduate</strong> with a strong foundation in software development, data structures, object-oriented programming, and full-stack web development.
+            </p>
+            <p class="summary-para">
+              Skilled in <strong>Python, JavaScript, HTML, CSS, Java, and SQL</strong>, I have hands-on experience designing and building responsive full-stack applications. I am deeply interested in <strong>Artificial Intelligence, Generative AI, and UI/UX Design</strong>, with a continuous track record of independently learning new tools and applying them to real-world software.
+            </p>
+            <p class="summary-para">
+              Possessing strong problem-solving, teamwork, and analytical communication skills, I am actively seeking opportunities as a <strong>Software Developer, Full-Stack Developer, AI Developer, or Technology Intern</strong>.
+            </p>
+          </div>
+
+          <div class="about-pillars-column">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4>Full-Stack &amp; Systems Craft</h4>
+                <p>Architecting clean web apps from intuitive frontends in React to robust backend services with Node.js, Django, and database schemas.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>AI &amp; Emerging Tech Explorer</h4>
+                <p>Proactively studying AI/ML integration, Generative AI pipelines, and modern web frameworks like TypeScript and Vue.js.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h4>Athletic Rigor &amp; Teamwork</h4>
+                <p>National level inline skating medalist. Competitive sports taught me unwavering dedication, mental endurance, and collaborative execution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Capabilities</span>
+          <h2 class="section-title">Technical Skills &amp; Tools</h2>
+          <p class="section-subtitle">A well-rounded toolkit across programming, full-stack web, databases, and engineering tools.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-tabs" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-btn" data-filter="languages" role="tab" aria-selected="false">Programming Languages</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Technologies</button>
+          <button class="filter-btn" data-filter="databases" role="tab" aria-selected="false">Databases &amp; Tools</button>
+          <button class="filter-btn" data-filter="core" role="tab" aria-selected="false">Core Concepts &amp; Soft Skills</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card" data-category="languages">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-badges-list">
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Core OOP</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C Language</span>
+                <span class="skill-level">Foundations</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Queries &amp; Relational</span>
+              </div>
+              <div class="skill-item self-taught">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-level">Self-Studied</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="skill-category-card" data-category="web">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3>Web Technologies</h3>
+            </div>
+            <div class="skill-badges-list">
+              <div class="skill-item">
+                <span class="skill-name">React.js</span>
+                <span class="skill-level">Frontend SPA</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level">Backend Runtime</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-level">Core Logic</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">HTML5 &amp; CSS3</span>
+                <span class="skill-level">Responsive Design</span>
+              </div>
+              <div class="skill-item self-taught">
+                <span class="skill-name">Vue.js</span>
+                <span class="skill-level">Self-Studied</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Frameworks -->
+          <div class="skill-category-card" data-category="databases">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3>Databases &amp; Frameworks</h3>
+            </div>
+            <div class="skill-badges-list">
+              <div class="skill-item">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-level">NoSQL &amp; Aggregations</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SQLite</span>
+                <span class="skill-level">Embedded DB</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Django</span>
+                <span class="skill-level">Python Framework</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-level">Version Control</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">VS Code &amp; IntelliJ</span>
+                <span class="skill-level">IDE Productivity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design & Productivity Tools -->
+          <div class="skill-category-card" data-category="databases">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3>UI/UX &amp; Productivity</h3>
+            </div>
+            <div class="skill-badges-list">
+              <div class="skill-item">
+                <span class="skill-name">Figma</span>
+                <span class="skill-level">UI/UX Wireframing</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Adobe Suite</span>
+                <span class="skill-level">Visual Design</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Canva</span>
+                <span class="skill-level">Asset Creation</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Microsoft 365</span>
+                <span class="skill-level">Excel, Word, PowerPoint, Teams</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core CS Concepts -->
+          <div class="skill-category-card" data-category="core">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3>Core CS Concepts</h3>
+            </div>
+            <div class="skill-badges-list">
+              <div class="skill-item">
+                <span class="skill-name">Data Structures</span>
+                <span class="skill-level">Linear &amp; Non-linear</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Object-Oriented Programming (OOP)</span>
+                <span class="skill-level">Solid Architecture</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Algorithmic Problem Solving</span>
+                <span class="skill-level">Efficiency &amp; Logic</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">RESTful APIs &amp; Auth</span>
+                <span class="skill-level">JWT Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category-card" data-category="core">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="skill-badges-list">
+              <div class="skill-item">
+                <span class="skill-name">Teamwork &amp; Collaboration</span>
+                <span class="skill-level">Cross-functional</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Analytical Thinking</span>
+                <span class="skill-level">Problem Breakdown</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Clear Communication</span>
+                <span class="skill-level">Technical &amp; Interpersonal</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Attention to Detail &amp; Quick Learner</span>
+                <span class="skill-level">Self-Driven</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Portfolio Work</span>
+          <h2 class="section-title">Featured Project Showcase</h2>
+          <p class="section-subtitle">Real-world full-stack development delivering measurable impact and seamless user experiences.</p>
+        </div>
+
+        <!-- Main Featured Project Card -->
+        <div class="featured-project-card">
+          <div class="project-media-column">
+            <div class="project-image-frame">
+              <img src="assets/projects/smart-expense-analyzer.jpg" alt="Smart Expense Analyzer Dashboard Interface Preview" class="project-cover-img" loading="lazy">
+              <div class="project-tag-overlay">
+                <span class="badge badge-primary">Full-Stack Application</span>
+                <span class="badge badge-success">Production Architecture</span>
+              </div>
+            </div>
+            <div class="project-quick-actions">
+              <button class="btn btn-primary btn-sm open-project-modal-btn" data-project="smart-expense">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>View Full Case Study</span>
+              </button>
+              <button class="btn btn-secondary btn-sm" id="viewMetricsBtn">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+                <span>Impact Highlights</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-info-column">
+            <div class="project-category">Full-Stack Financial Web App</div>
+            <h3 class="project-title">Smart Expense Analyzer</h3>
+            <p class="project-lead">
+              A comprehensive full-stack expense tracking and financial intelligence application designed with a responsive dashboard, automated budget monitoring, and real-time visual insights to elevate financial awareness.
+            </p>
+
+            <!-- Metrics Highlight Badges -->
+            <div class="project-metrics-grid">
+              <div class="metric-card">
+                <span class="metric-val">-30%</span>
+                <span class="metric-desc">Manual Data Entry Time</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-val">+20%</span>
+                <span class="metric-desc">MongoDB Query Performance</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-val">100%</span>
+                <span class="metric-desc">Responsive Cross-Device UI</span>
+              </div>
+            </div>
+
+            <!-- Bullet point details from resume -->
+            <ul class="project-features-list">
+              <li>
+                <div class="bullet-dot"></div>
+                <div><strong>Full-Stack Architecture:</strong> Developed a responsive dashboard with real-time financial insights and automated budget tracking to improve user financial awareness.</div>
+              </li>
+              <li>
+                <div class="bullet-dot"></div>
+                <div><strong>Interactive Analytics:</strong> Implemented expense categorization, monthly budget tracking, and interactive charts, reducing manual data entry time by 30%.</div>
+              </li>
+              <li>
+                <div class="bullet-dot"></div>
+                <div><strong>Security &amp; Performance:</strong> Designed a responsive user interface with JWT authentication and optimized MongoDB aggregation queries, improving application performance by 20%.</div>
+              </li>
+            </ul>
+
+            <!-- Tech Stack Tags -->
+            <div class="tech-stack-row">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">JavaScript ES6</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">JWT Auth</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Projects / Engineering Showcase -->
+        <div class="secondary-projects-grid">
+          <div class="secondary-project-card">
+            <div class="sec-card-header">
+              <div class="sec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <span class="badge badge-subtle">Exploration &amp; Lab</span>
+            </div>
+            <h4>AI &amp; Generative AI Integrations</h4>
+            <p>Hands-on experiments leveraging modern LLM APIs, prompt engineering frameworks, and Python tooling to automate tasks and build intelligent interfaces.</p>
+            <div class="tech-stack-row">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">GenAI</span>
+              <span class="tech-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="secondary-project-card">
+            <div class="sec-card-header">
+              <div class="sec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <span class="badge badge-subtle">Security Research</span>
+            </div>
+            <h4>Cyber Security &amp; Backend Systems</h4>
+            <p>Exploring secure authentication patterns, role-based access control (RBAC), database security best practices, and secure API endpoints in Django &amp; Node.</p>
+            <div class="tech-stack-row">
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">SQLite / SQL</span>
+              <span class="tech-tag">Security</span>
+            </div>
+          </div>
+
+          <div class="secondary-project-card">
+            <div class="sec-card-header">
+              <div class="sec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-subtle">UI/UX Craft</span>
+            </div>
+            <h4>Design Systems &amp; Frontend Prototypes</h4>
+            <p>Designing modern component libraries, clean design systems in Figma, and translating wireframes into accessible, pixel-perfect web interfaces.</p>
+            <div class="tech-stack-row">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Vue.js / React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Academic Journey</span>
+          <h2 class="section-title">Education &amp; Qualifications</h2>
+          <p class="section-subtitle">Consistent academic background grounding core computer science and engineering principles.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1: B.Tech CSE -->
+          <div class="timeline-card active-card">
+            <div class="timeline-badge-marker">
+              <div class="marker-dot current"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <span class="timeline-dates">Aug 2023 &mdash; Present</span>
+                <span class="badge badge-primary">Undergraduate Degree</span>
+              </div>
+              <h3 class="timeline-degree">Bachelor of Technology &mdash; Computer Science &amp; Engineering</h3>
+              <h4 class="timeline-institution">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Parul University, Vadodara, Gujarat
+              </h4>
+              <p class="timeline-description">
+                Pursuing comprehensive studies in Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks, and Software Engineering. Active in technology clubs and independent project implementation.
+              </p>
+              <div class="timeline-tags">
+                <span class="meta-tag">Data Structures</span>
+                <span class="meta-tag">OOP with Java/Python</span>
+                <span class="meta-tag">Web Development</span>
+                <span class="meta-tag">DBMS &amp; SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Class XII -->
+          <div class="timeline-card">
+            <div class="timeline-badge-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <span class="timeline-dates">2022 &mdash; 2023</span>
+                <span class="badge badge-subtle">Senior Secondary</span>
+              </div>
+              <h3 class="timeline-degree">Senior Secondary (Class XII), CBSE</h3>
+              <h4 class="timeline-institution">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Jain Public School, Ratlam
+              </h4>
+              <p class="timeline-description">
+                Completed senior secondary schooling with strong focus on science, mathematics, and computer foundations, developing analytical thinking and structured problem-solving skills.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Class X -->
+          <div class="timeline-card">
+            <div class="timeline-badge-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <span class="timeline-dates">2020 &mdash; 2021</span>
+                <span class="badge badge-subtle">Secondary</span>
+              </div>
+              <h3 class="timeline-degree">Secondary (Class X), CBSE</h3>
+              <h4 class="timeline-institution">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Jain Public School, Ratlam
+              </h4>
+              <p class="timeline-description">
+                Foundational education encompassing science, mathematics, and extracurricular athletic discipline.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & INTERESTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Highlights &amp; Passions</span>
+          <h2 class="section-title">Achievements &amp; Activities</h2>
+          <p class="section-subtitle">Beyond the keyboard: athletic triumphs, continuous learning, and diverse personal interests.</p>
+        </div>
+
+        <div class="achievements-showcase-grid">
+          <!-- Spotlight Card: Silver Medalist -->
+          <div class="spotlight-achievement-card">
+            <div class="spotlight-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="spotlight-content">
+              <span class="badge badge-warning">National Level Recognition</span>
+              <h3 class="spotlight-title">Silver Medalist in Inline Skating &mdash; National Level</h3>
+              <p class="spotlight-text">
+                Awarded Silver Medal at the National Level in Inline Skating, demonstrating relentless discipline, stamina, consistency, and competitive sportsmanship under pressure.
+              </p>
+              <div class="trait-pills">
+                <span class="trait-pill">⚡ Unyielding Discipline</span>
+                <span class="trait-pill">🎯 Goal Consistency</span>
+                <span class="trait-pill">🏆 Sportsmanship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Self-Study & Tech Shipping -->
+          <div class="achievement-card">
+            <div class="card-icon-accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3>Independent Learning &amp; Deployment</h3>
+            <p>
+              Self-studied <strong>TypeScript, Vue.js, and AI/ML integration</strong> alongside rigorous university coursework, applying this knowledge to design and ship end-to-end software projects from concept to deployment.
+            </p>
+            <span class="card-footer-metric">Autonomous &bull; Fast Learner</span>
+          </div>
+
+          <!-- Card 3: Areas of Interest Grid -->
+          <div class="achievement-card interests-summary-card">
+            <div class="card-icon-accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3>Interests &amp; Hobbies</h3>
+            <p class="mb-3">Fields of fascination and offline recharge:</p>
+            <div class="interests-cloud">
+              <span class="interest-item"><span class="interest-emoji">🛡️</span> Cyber Security</span>
+              <span class="interest-item"><span class="interest-emoji">🎨</span> UI/UX Design</span>
+              <span class="interest-item"><span class="interest-emoji">🤖</span> AI &amp; Backend Systems</span>
+              <span class="interest-item"><span class="interest-emoji">🚀</span> Emerging Technologies</span>
+              <span class="interest-item"><span class="interest-emoji">📚</span> Reading</span>
+              <span class="interest-item"><span class="interest-emoji">🚗</span> Driving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">Open to software development opportunities, technology internships, and impactful projects.</p>
+        </div>
+
+        <div class="contact-layout-grid">
+          <!-- Contact Info Details Column -->
+          <div class="contact-details-column">
+            <div class="contact-card">
+              <h3>Contact Information</h3>
+              <p>Feel free to reach out via email, phone, or connect on LinkedIn and GitHub.</p>
+
+              <div class="contact-item-list">
+                <!-- Email Item -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-content">
+                    <span class="contact-label">Email Address</span>
+                    <a href="mailto:dhananjayparmar5041@gmail.com" class="contact-link">dhananjayparmar5041@gmail.com</a>
+                  </div>
+                  <button class="copy-trigger-btn" data-copy="dhananjayparmar5041@gmail.com" title="Copy Email" aria-label="Copy Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Phone Item -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-content">
+                    <span class="contact-label">Phone Number</span>
+                    <a href="tel:+917089347041" class="contact-link">+91 7089347041</a>
+                  </div>
+                  <button class="copy-trigger-btn" data-copy="+917089347041" title="Copy Phone Number" aria-label="Copy Phone Number">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Location Item -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-content">
+                    <span class="contact-label">Current Location</span>
+                    <span class="contact-value">Vadodara, Gujarat, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links-block">
+                <span class="social-label">Professional Profiles:</span>
+                <div class="social-links-row">
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form Column -->
+          <div class="contact-form-column">
+            <div class="form-container-card">
+              <h3>Send a Direct Message</h3>
+              <p>Have an opportunity, internship inquiry, or question? Send me a message below:</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="formName">Your Name <span class="req">*</span></label>
+                    <input type="text" id="formName" name="name" class="form-input" placeholder="e.g. Alex Smith" required>
+                    <span class="field-error-msg" id="nameError"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="formEmail">Your Email <span class="req">*</span></label>
+                    <input type="email" id="formEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                    <span class="field-error-msg" id="emailError"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="formSubject">Subject <span class="req">*</span></label>
+                  <input type="text" id="formSubject" name="subject" class="form-input" placeholder="e.g. Software Developer Internship / Opportunity" required>
+                  <span class="field-error-msg" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="formMessage">Message <span class="req">*</span></label>
+                  <textarea id="formMessage" name="message" rows="5" class="form-input" placeholder="Hi Dhananjay, I came across your portfolio..." required></textarea>
+                  <span class="field-error-msg" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submitContactBtn">
+                  <span class="btn-text">Send Message</span>
+                  <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Dhananjay Parmar</span>
+        <p class="footer-tagline">B.Tech Computer Science &amp; Engineering &bull; Parul University</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+        <p class="footer-copy">&copy; <span id="currentYear"></span> Dhananjay Parmar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME MODAL -->
+  <div id="resumeModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-card resume-modal-card">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <h3 id="resumeModalTitle">Curriculum Vitae &mdash; Dhananjay Parmar</h3>
+          <span class="modal-subtitle">Computer Science &amp; Engineering Student</span>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-secondary btn-sm" id="printResumeBtn">
+            <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+          <button class="modal-close-btn" id="closeResumeModalBtn" aria-label="Close resume modal">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body resume-document-view" id="printableResumeArea">
+        <div class="resume-sheet">
+          <div class="resume-sheet-header">
+            <h1 class="resume-name">DHANANJAY PARMAR</h1>
+            <p class="resume-tagline">Computer Science &amp; Engineering Student</p>
+            <div class="resume-contact-line">
+              <span>Vadodara, Gujarat, India</span> &bull;
+              <span>+91 7089347041</span> &bull;
+              <span>dhananjayparmar5041@gmail.com</span> &bull;
+              <span>LinkedIn</span> &bull;
+              <span>GitHub</span>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-sec-title">PROFESSIONAL SUMMARY</h2>
+            <p class="resume-sec-body">
+              Computer Science &amp; Engineering undergraduate with a strong foundation in software development, data structures, object-oriented programming, and full-stack web development. Skilled in Python, JavaScript, HTML, CSS, Java, and SQL, with hands-on experience building full-stack applications. Interested in Artificial Intelligence, Generative AI, and UI/UX Design, with a track record of independently learning new tools and applying them to real-world projects. Strong problem-solving, teamwork, and communication skills. Seeking opportunities as a Software Developer, Full-Stack Developer, AI Developer, or Technology Intern.
+            </p>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-sec-title">TECHNICAL SKILLS</h2>
+            <div class="resume-skills-list">
+              <p><strong>Programming Languages:</strong> C, Java, Python, SQL</p>
+              <p><strong>Web Technologies:</strong> HTML, CSS, JavaScript, React, Node.js</p>
+              <p><strong>Databases:</strong> MongoDB, SQLite</p>
+              <p><strong>Frameworks &amp; Tools:</strong> Django, Git, VS Code, IntelliJ IDEA, Figma, Adobe, Canva</p>
+              <p><strong>Microsoft 365:</strong> Excel, Word, PowerPoint, Outlook, Teams</p>
+              <p><strong>Core Concepts:</strong> Data Structures, Object-Oriented Programming, Algorithmic Problem Solving</p>
+              <p><strong>Soft Skills:</strong> Teamwork, Communication, Analytical Thinking, Attention to Detail, Quick Learner</p>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-sec-title">EDUCATION</h2>
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>Bachelor of Technology - Computer Science &amp; Engineering</strong>
+                <span class="resume-date">Aug 2023 - Present</span>
+              </div>
+              <div class="resume-subline"><em>Parul University, Vadodara, Gujarat</em></div>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>Senior Secondary (Class XII), CBSE</strong>
+                <span class="resume-date">2022 - 2023</span>
+              </div>
+              <div class="resume-subline"><em>Jain Public School, Ratlam</em></div>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>Secondary (Class X), CBSE</strong>
+                <span class="resume-date">2020 - 2021</span>
+              </div>
+              <div class="resume-subline"><em>Jain Public School, Ratlam</em></div>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-sec-title">PROJECTS</h2>
+            <div class="resume-entry">
+              <div class="resume-entry-header">
+                <strong>Smart Expense Analyzer</strong>
+              </div>
+              <div class="resume-subline"><em>HTML, CSS, JavaScript, React, Node.js, MongoDB</em></div>
+              <ul class="resume-bullets">
+                <li>Developed a full-stack expense tracking application with a responsive dashboard, real-time financial insights, and automated budget tracking to improve user financial awareness.</li>
+                <li>Implemented expense categorization, monthly budget tracking, and interactive charts, reducing manual data entry time by 30%.</li>
+                <li>Designed a responsive user interface with JWT authentication and optimized MongoDB queries, improving application performance by 20%.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-sec-title">ACHIEVEMENTS &amp; ACTIVITIES</h2>
+            <ul class="resume-bullets">
+              <li>Awarded Silver Medal at the National Level in Inline Skating, demonstrating discipline, consistency, and competitive sportsmanship.</li>
+              <li>Self-studied TypeScript, Vue.js, and AI/ML integration alongside university coursework, applying this knowledge to design and ship end-to-end software projects from concept to deployment.</li>
+            </ul>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-sec-title">INTERESTS</h2>
+            <p class="resume-sec-body">
+              Cyber Security, UI/UX Design, AI &amp; Backend Systems, Emerging Technologies, Reading, Driving
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT CASE STUDY MODAL -->
+  <div id="projectModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <div class="modal-card project-modal-card">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <h3 id="projectModalTitle">Smart Expense Analyzer &mdash; Case Study</h3>
+          <span class="modal-subtitle">Full-Stack Financial Dashboard &amp; Budget Optimization</span>
+        </div>
+        <button class="modal-close-btn" id="closeProjectModalBtn" aria-label="Close project modal">&times;</button>
+      </div>
+
+      <div class="modal-body project-modal-body">
+        <div class="modal-image-preview">
+          <img src="assets/projects/smart-expense-analyzer.jpg" alt="Smart Expense Analyzer Preview" class="modal-project-img">
+        </div>
+
+        <div class="modal-content-details">
+          <h4>Project Overview</h4>
+          <p>
+            The <strong>Smart Expense Analyzer</strong> is an end-to-end web application built to address personal financial fragmentation. It provides users with automated expense categorization, interactive charts, and real-time budget tracking to establish mindful spending habits.
+          </p>
+
+          <div class="modal-stats-row">
+            <div class="mstat">
+              <span class="mstat-num">-30%</span>
+              <span class="mstat-label">Manual Entry Effort</span>
+            </div>
+            <div class="mstat">
+              <span class="mstat-num">+20%</span>
+              <span class="mstat-label">Query Efficiency</span>
+            </div>
+            <div class="mstat">
+              <span class="mstat-num">JWT</span>
+              <span class="mstat-label">Secured Session Auth</span>
+            </div>
+          </div>
+
+          <h4>Key Technical Implementations</h4>
+          <ul class="modal-details-list">
+            <li><strong>Frontend Architecture:</strong> Interactive single-page interface developed in React.js with modular component design, reactive state management, and real-time SVG/Canvas chart widgets.</li>
+            <li><strong>Backend REST API:</strong> Node.js and Express server with decoupled route controllers, JSON Web Token (JWT) authentication, and input sanitization middleware.</li>
+            <li><strong>Optimized NoSQL Storage:</strong> MongoDB schema design with indexing on category, date, and user IDs, speeding up aggregate monthly reports by 20%.</li>
+            <li><strong>Budget Alerts &amp; Automation:</strong> Dynamic threshold triggers alerting users when approaching category budget caps.</li>
+          </ul>
+
+          <h4>Technology Stack</h4>
+          <div class="tech-stack-row mb-4">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">JavaScript (ES6+)</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
